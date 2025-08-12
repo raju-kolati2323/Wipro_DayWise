@@ -1,0 +1,57 @@
+<!-- Case Study: Travel Bliss – A Travel Booking Website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Travel Bliss</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Book Your Trip</h2>
+        <form action="thank.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Choose Package:</label><br>
+            <input type="radio" name="package" value="standard"> Standard
+            <input type="radio" name="package" value="deluxe"> Deluxe
+            <input type="radio" name="package" value="vip"> VIP <br><br>
+
+
+            <label>Extras:</label><br>
+            <input type="checkbox" name="extras" value="meals"> Meals
+            <input type="checkbox" name="extras" value="guide"> Tour Guide
+            <input type="checkbox" name="extras" value="insurance"> Insurance<br><br>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" required>
+
+            <div style="text-align: center;">
+                <button type="submit">Submit Booking</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Travel Bliss. All rights reserved.
+    </footer>
+</body>
+
+</html>

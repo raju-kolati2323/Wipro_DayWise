@@ -1,0 +1,214 @@
+<!-- Case Study 2: “EcoTour – Explore Nature” -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoTour – Explore Nature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 500px;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        #about {
+            background: #f4f4f4;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        #gallery img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 1rem;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .mandatory {
+    color: red;
+    font-weight: bold;
+}
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.5s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://logoeps.com/wp-content/uploads/2013/09/eco-tour-logo-templates.png" alt="Logo">
+        <h3>EcoTour - Explore Nature</h3>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-sustainable-travel-horizontal-banner_23-2151121183.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Banner">
+    </div>
+
+    <section id="about">
+        <h2>About EcoTour</h2>
+        <p>EcoTour is your gateway to exploring the beauty of nature through eco-friendly travel. We aim to connect you
+            with the natural world while promoting sustainability.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <img src="https://www.shutterstock.com/image-photo/family-hiking-mountains-travel-adventure-260nw-2028613154.jpg"
+            alt="Mountain">
+        <img src="https://img.freepik.com/free-photo/trekking-forest_53876-28.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Forest">
+        <img src="https://thumbs.dreamstime.com/b/nature-photographer-tourist-camera-shoots-lovatnet-lake-bea-nature-photographer-tourist-camera-shoots-beautiful-nature-114966345.jpg"
+            alt="Lake">
+        <img src="https://www.shutterstock.com/image-photo/happy-tourist-having-fun-enjoying-600nw-2488913735.jpg"
+            alt="Desert">
+        <img src="https://img.freepik.com/free-photo/trekking-forest_53876-28.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Forest">
+        <img src="https://www.shutterstock.com/image-photo/family-hiking-mountains-travel-adventure-260nw-2028613154.jpg"
+            alt="Mountain">
+        <img src="https://thumbs.dreamstime.com/b/nature-photographer-tourist-camera-shoots-lovatnet-lake-bea-nature-photographer-tourist-camera-shoots-beautiful-nature-114966345.jpg"
+            alt="Lake">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submitForm.html">
+            <label for="name">Name: <span class="mandatory">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email: <span class="mandatory">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="radio-group">
+                <p><strong>How did you hear about us? <span class="mandatory">*</span></strong></p>
+                <label><input type="radio" name="source" value="social" required> Social Media</label>
+                <label><input type="radio" name="source" value="search"> Search</label>
+                <label><input type="radio" name="source" value="friend"> Friend</label>
+            </div>
+
+            <label for="message">Message: <span class="mandatory">*</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Follow us:</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img
+                    src="https://tse1.mm.bing.net/th/id/OIP.829RGyYVlqLevoXYRLsbhwHaHa?r=0&cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                    alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 EcoTour</p>
+    </footer>
+
+</body>
+
+</html>
