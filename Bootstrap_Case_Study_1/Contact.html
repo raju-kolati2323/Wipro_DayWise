@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <style>
+    .navbar-links {
+      list-style: none;
+    }
+
+    .navbar-links li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar-links li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row bg-primary">
+    <div class="col col-md-1"></div>
+    <div class="col col-md-9 d-flex align-items-center">
+      <h3><i class="fa fa-bandcamp" aria-hidden="true"></i>My Website</h3>
+    </div>
+    <div class="col-md-2">
+      <ul class="navbar-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container my-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+
+  <div class="text-center mb-3">
+    <p>Email: <a href="mailto:info@gmail.com">info@gmail.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+  </div>
+
+  <form action="thank.html">
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Your Email <span class="text-danger">*</span></label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+      <textarea class="form-control" id="message" rows="3" required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </div>
+  </form>
+</div>
+
+  <div class="row">
+    <footer class="bg-dark p-3 text-light d-flex justify-content-center">
+      &copy; 2025 My Website | Made using Bootstrap.
+    </footer>
+  </div>
+</body>
+
+</html>

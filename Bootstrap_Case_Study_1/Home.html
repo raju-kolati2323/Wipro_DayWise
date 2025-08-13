@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <style>
+        .navbar-links {
+            list-style: none;
+        }
+
+        .navbar-links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar-links li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row bg-primary">
+        <div class="col col-md-1"></div>
+        <div class="col col-md-9 d-flex align-items-center">
+            <h3><i class="fa fa-bandcamp" aria-hidden="true"></i>My Website</h3>
+        </div>
+        <div class="col-md-2">
+            <ul class="navbar-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2><i class="fa fa-user" aria-hidden="true"></i>Registration Form</h2>
+            <form action="thank.html" action="post" class="border rounded p-3 bg-light">
+                <div class="mb-3">
+                    <lable class="form-label" for="inputFullname"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                        Full Name <span class="text-danger">*</span></lable>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter you name" required>
+                </div>
+                <div class="mb-3">
+                    <lable class="form-label" for="inputEmail"><i class="fa fa-envelope" aria-hidden="true"></i> Email
+                        <span class="text-danger">*</span>
+                    </lable>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <lable class="form-label" for="inputPassword"><i class="fa fa-lock" aria-hidden="true"></i> Password
+                        <span class="text-danger">*</span>
+                    </lable>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password"
+                        required>
+                    <br>
+                    <button class="btn btn-success" type="submit">Submit <i class="fa fa-check"
+                            aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2><i class="fa fa-table" aria-hidden="true"></i>User List</h2>
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr class="table-primary">
+                        <th># ID</th>
+                        <th><i class="fa fa-user" aria-hidden="true"></i> Name</th>
+                        <th><i class="fa fa-envelope" aria-hidden="true"></i> Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>a</td>
+                        <td>a@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>b</td>
+                        <td>b@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>c</td>
+                        <td>c@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+    <br>
+    <div class="row">
+        <footer class="bg-dark p-3 text-light d-flex justify-content-center">
+            &copy; 2025 My Website | Made using Bootstrap.
+        </footer>
+    </div>
+</body>
+
+</html>
