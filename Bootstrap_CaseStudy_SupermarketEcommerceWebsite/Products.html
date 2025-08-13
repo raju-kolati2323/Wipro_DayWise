@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SuperMart | Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://img.icons8.com/color/48/000000/grocery-store.png" alt="Logo" width="40" />
+                <span class="fw-bold text-success fs-4">SuperMart</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto d-flex gap-2 align-items-center">
+                    <a href="Home.html" class="btn btn-outline-success">Home</a>
+                    <a href="Products.html" class="btn btn-outline-success">Products</a>
+                    <a href="Registration.html" class="btn btn-outline-success">Register</a>
+                    <a href="Login.html" class="btn btn-outline-success">Login</a>
+                    <a href="Contact.html" class="btn btn-outline-success">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+  <div class="container">
+    <h2 class="text-success fw-bold text-center mb-4">Products</h2>
+
+    <div class="tab-content" id="productPagesContent">
+
+      <div class="tab-pane fade show active" id="page1">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg" class="card-img-top product-img" alt="Apple">
+              <div class="card-body">
+                <h5 class="card-title">Fresh Apples</h5>
+                <p class="text-success fw-bold">₹269 / kg</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrRsCX3JZlqqX9nhSeHHclRuY34rGHI4_mw&s" class="card-img-top product-img" alt="Milk">
+              <div class="card-body">
+                <h5 class="card-title">Organic Milk</h5>
+                <p class="text-success fw-bold">₹89 / litre</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvnmSPfI3Ch2ZqQsq_4f-sXkJGuOhmWe4YQ&s" class="card-img-top product-img" alt="Bread">
+              <div class="card-body">
+                <h5 class="card-title">Whole Wheat Bread</h5>
+                <p class="text-success fw-bold">₹60</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://www.jiomart.com/images/product/original/491317322/basmati-biryani-rice-25-kg-product-images-o491317322-p590033730-0-202205172225.jpg?im=Resize=(1000,1000)" class="card-img-top product-img" alt="Rice">
+              <div class="card-body">
+                <h5 class="card-title">Basmati Rice</h5>
+                <p class="text-success fw-bold">₹120 / kg</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal4">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/drinks-juice/e/z/r/-original-imahb3fcqcghbagu.jpeg" class="card-img-top product-img" alt="Juice">
+              <div class="card-body">
+                <h5 class="card-title">Orange Juice</h5>
+                <p class="text-success fw-bold">₹90 / L</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal5">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://yourfamilymedical.com/wp-content/uploads/2023/02/Healthy-Easy-Snacks-the-Whole-Family-Will-Love.jpg" class="card-img-top product-img" alt="Snacks">
+              <div class="card-body">
+                <h5 class="card-title">Healthy Snacks</h5>
+                <p class="text-success fw-bold">₹75 / pack</p>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#productModal6">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="page2">
+        <div class="row g-4">
+          <div class="col-md-12 text-center">
+            <p class="text-muted">More products coming soon...</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="page3">
+        <div class="row g-4">
+          <div class="col-md-12 text-center">
+            <p class="text-muted">More products coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nav nav-pills justify-content-center my-4" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#page1" type="button">Page 1</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page2" type="button">Page 2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page3" type="button">Page 3</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="modal fade" id="productModal1" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg" class="img-fluid rounded-top" alt="Apples">
+        <div class="modal-body">
+          <h5 class="modal-title">Fresh Apples</h5>
+          <p class="text-muted">Crisp, juicy and sweet apples perfect for snacks or baking. Packed with nutrients.</p>
+          <p class="fw-bold text-success">₹270 / kg</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal2" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrRsCX3JZlqqX9nhSeHHclRuY34rGHI4_mw&s" class="img-fluid rounded-top" alt="Milk">
+        <div class="modal-body">
+          <h5 class="modal-title">Organic Milk</h5>
+          <p class="text-muted">Farm-fresh organic milk, free from preservatives. Delivered chilled and pure.</p>
+          <p class="fw-bold text-success">₹149 / litre</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvnmSPfI3Ch2ZqQsq_4f-sXkJGuOhmWe4YQ&s" class="img-fluid rounded-top" alt="Bread">
+        <div class="modal-body">
+          <h5 class="modal-title">Whole Wheat Bread</h5>
+          <p class="text-muted">Soft and healthy bread made from 100% whole wheat flour. Ideal for breakfast.</p>
+          <p class="fw-bold text-success">₹60</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal4">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://www.jiomart.com/images/product/original/491317322/basmati-biryani-rice-25-kg-product-images-o491317322-p590033730-0-202205172225.jpg?im=Resize=(1000,1000)" class="img-fluid rounded-top" alt="Rice">
+        <div class="modal-body">
+          <h5 class="modal-title">Basmati Rice</h5>
+          <p class="text-muted">Premium long-grain Basmati rice for your daily meals and special dishes.</p>
+          <p class="fw-bold text-success">₹120 / kg</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal5">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/drinks-juice/e/z/r/-original-imahb3fcqcghbagu.jpeg" class="img-fluid rounded-top" alt="Juice">
+        <div class="modal-body">
+          <h5 class="modal-title">Orange Juice</h5>
+          <p class="text-muted">100% fresh orange juice with no added sugar. Full of vitamin C and flavor.</p>
+          <p class="fw-bold text-success">₹90 / litre</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal6" >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="https://yourfamilymedical.com/wp-content/uploads/2023/02/Healthy-Easy-Snacks-the-Whole-Family-Will-Love.jpg" class="img-fluid rounded-top" alt="Snacks">
+        <div class="modal-body">
+          <h5 class="modal-title">Healthy Snacks</h5>
+          <p class="text-muted">Low-calorie, high-fiber snacks perfect for guilt-free munching anytime.</p>
+          <p class="fw-bold text-success">₹75 / pack</p>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-success text-white py-4">
+  <div class="container text-center">
+    <p class="mb-1">
+      <a href="tel:+919876543210" class="text-white me-3 text-decoration-none">
+        <i class="fas fa-phone-alt"></i> +91 98765 43210
+      </a>
+      <a href="mailto:support@supermart.com" class="text-white me-3 text-decoration-none">
+        <i class="fas fa-envelope"></i> support@supermart.com
+      </a>
+      <a href="Home.html" class="text-white me-3 text-decoration-none" target="_blank">
+        <i class="fas fa-globe"></i> www.supermart.com
+      </a>
+      <a href="https://instagram.com/supermart" class="text-white text-decoration-none" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </p>
+    <p class="mb-0">&copy; 2025 SuperMart. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
