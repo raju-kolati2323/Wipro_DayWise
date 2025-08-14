@@ -1,0 +1,128 @@
+<!-- write a program for Bank Application - Selection execution
+ Create an account with acc id, acc name and inital amount
+ 
+ Place four buttons for - deposit, withdraw, check balance, account details
+ 
+ get amount from user
+ deposit = deposit amount + balance
+ 
+ withdraw = check whether you are having sufficient amount of money to withdraw, else return error (you dont have enough money in the account)
+ 
+ check balance = return balance amount
+ 
+ account details = get account id, name and balance-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Application</title>
+</head>
+<body>
+  <h1 align="center">Bank Application</h1>
+
+  <div>
+    <input type="text" id="userId" placeholder="Enter Account ID">
+    <input type="text" id="userName" placeholder="Enter Name">
+    <button onclick="verifyUser()">Login</button>
+  </div>
+
+  <br><br>
+  <div id="operations" style="display: none;">
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="checkBalance()">Check Balance</button>
+    <button onclick="getDetails()">Get Account Details</button>
+  </div>
+
+  <div id="inputAmount" style="margin-top: 10px;"></div>
+  <p id="output"></p>
+
+  <script>
+    let accountHolders = [
+      { id: "acc1", name: "Bill", balance: 10000 },
+      { id: "acc2", name: "Linus", balance: 14000 },
+      { id: "acc3", name: "Alan", balance: 20000 }
+    ];
+
+    let currentUser, currentOperation;
+
+    const verifyUser = () => {
+      const id = document.getElementById("userId").value.trim();
+      const name = document.getElementById("userName").value.trim();
+
+      currentUser = accountHolders.find(member => member.id === id && member.name === name);
+
+      const output = document.getElementById("output");
+      const ops = document.getElementById("operations");
+      document.getElementById("inputAmount").innerHTML = "";
+
+      if (!currentUser) {
+        output.innerHTML = `No account holder found with the details.`;
+        ops.style.display = "none";
+      } else {
+        output.innerHTML = `Welcome, ${currentUser.name}! Choose an operation above.`;
+        ops.style.display = "block";
+      }
+    };
+
+    const deposit = () => {
+      currentOperation = "deposit";
+      showAmountInput("Deposit Amount:");
+    };
+
+    const withdraw = () => {
+      currentOperation = "withdraw";
+      showAmountInput("Withdraw Amount:");
+    };
+
+    const checkBalance = () => {
+      document.getElementById("output").innerHTML = `Your current balance is ₹${currentUser.balance}`;
+    };
+
+    const getDetails = () => {
+      document.getElementById("output").innerHTML = `
+        Account Details:<br>
+        ID: ${currentUser.id}<br>
+        Name: ${currentUser.name}<br>
+        Balance: ₹${currentUser.balance}`;
+    };
+
+    const showAmountInput = (labelText) => {
+      const container = document.getElementById("inputAmount");
+      container.innerHTML = `
+        <label>${labelText}</label>
+        <input type="number" id="amountInput" placeholder="Enter amount">
+        <button onclick="handleAmount()">Submit</button>
+      `;
+    };
+
+    const handleAmount = () => {
+      const amount = parseFloat(document.getElementById("amountInput").value);
+      const output = document.getElementById("output");
+      const container = document.getElementById("inputAmount");
+
+      if (isNaN(amount) || amount <= 0) {
+        output.innerHTML = "Please enter a valid amount.";
+        return;
+      }
+
+      if (currentOperation === "deposit") {
+        currentUser.balance += amount;
+        output.innerHTML = `₹${amount} deposited successfully. New Balance: ₹${currentUser.balance}`;
+      } else if (currentOperation === "withdraw") {
+        if (currentUser.balance >= amount) {
+          currentUser.balance -= amount;
+          output.innerHTML = `₹${amount} withdrawn successfully. New Balance: ₹${currentUser.balance}`;
+        } else {
+          output.innerHTML = `Insufficient balance. Current Balance: ₹${currentUser.balance}`;
+        }
+      }
+
+      container.innerHTML = "";
+      currentOperation = "";
+    };
+  </script>
+</body>
+</html>
