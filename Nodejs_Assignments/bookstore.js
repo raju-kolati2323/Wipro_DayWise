@@ -36,9 +36,13 @@ async function run() {
 
     //update
     const updatedBook = await Book.findOneAndUpdate(
-        { title: book.title }, { title: "New Title" }, { new: true }
+        { title: 'Book1' }, { title: "Node.js Book" }, { new: true }
     );
-    console.log("Updated Book:", updatedBook);
+    if (!updatedBook) {
+        console.error("Book not found with the provided title");
+    } else {
+        console.log("Updated Book:", updatedBook);
+    }
 }
 
 run();
