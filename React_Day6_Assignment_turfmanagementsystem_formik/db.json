@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@turf.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "email": "john@user.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "turfs": [
+    {
+      "id": "1",
+      "title": "Soccer Turf",
+      "location": "Downtown",
+      "price": 500,
+      "description": "Full-size soccer turf"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "title": "Soccer Turf",
+      "location": "Downtown",
+      "price": 500,
+      "description": "Full-size soccer turf",
+      "date": "2025-09-01",
+      "timeSlot": "11am-12pm",
+      "userId": "2",
+      "userName": "John Doe"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "f1ba",
+      "userId": "2",
+      "userName": "John Doe",
+      "turfId": "1",
+      "turfName": "Soccer Turf",
+      "date": "2025-09-01",
+      "timeSlot": "11am-12pm"
+    }
+  ]
+}
